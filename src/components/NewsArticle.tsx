@@ -1,5 +1,6 @@
 import { Calendar, User, X } from "lucide-react";
 import { useState } from "react";
+import { getPublicPath } from "../utils/paths";
 
 export default function NewsArticle() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -8,7 +9,7 @@ export default function NewsArticle() {
     <article className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg transition-colors duration-300">
       <div className="relative h-96">
         <img
-          src="/images/image 1.png"
+          src={getPublicPath("/images/image 1.png")}
           alt="Limbus Game Dungeon"
           className="w-full h-full object-cover"
         />
@@ -49,7 +50,7 @@ export default function NewsArticle() {
 
         <div className="my-8">
           <img
-            src="/images/image.png"
+            src={getPublicPath("/images/image.png")}
             alt="Limbus Running Skeleton"
             className="w-full rounded-lg shadow-md"
           />
@@ -104,7 +105,7 @@ export default function NewsArticle() {
 
           <div className="my-8">
             <img
-              src="/images/image 1.png"
+              src={getPublicPath("/images/image 1.png")}
               alt="Limbus Gameplay UI"
               className="w-full rounded-lg shadow-md"
             />
@@ -145,22 +146,22 @@ export default function NewsArticle() {
           <div className="flex justify-center items-center my-8">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl">
               <img
-                src="/images/7a80fe0cdd88af8a7f429a2af9943dcc.png"
+                src={getPublicPath("/images/7a80fe0cdd88af8a7f429a2af9943dcc.png")}
                 alt="Dungeon One"
                 className="w-full rounded-lg shadow-md cursor-pointer hover:opacity-80 transition-opacity"
                 onClick={() =>
                   setSelectedImage(
-                    "/images/7a80fe0cdd88af8a7f429a2af9943dcc.png"
+                    getPublicPath("/images/7a80fe0cdd88af8a7f429a2af9943dcc.png")
                   )
                 }
               />
               <img
-                src="/images/e22c1a9791f7dab2627a772265469663.png"
+                src={getPublicPath("/images/e22c1a9791f7dab2627a772265469663.png")}
                 alt="Dungeon Two"
                 className="w-full rounded-lg shadow-md cursor-pointer hover:opacity-80 transition-opacity"
                 onClick={() =>
                   setSelectedImage(
-                    "/images/e22c1a9791f7dab2627a772265469663.png"
+                    getPublicPath("/images/e22c1a9791f7dab2627a772265469663.png")
                   )
                 }
               />
@@ -196,7 +197,7 @@ export default function NewsArticle() {
 
           <div className="my-8">
             <img
-              src="/images/image 2.png"
+              src={getPublicPath("/images/image 2.png")}
               alt="Limbus Skull Character"
               className="w-full rounded-lg shadow-md"
             />
