@@ -1,4 +1,4 @@
-import { Gamepad2, Search, Menu, Sun, Moon } from 'lucide-react';
+import { Gamepad2, Search, Menu, Sun, Moon } from "lucide-react";
 
 interface HeaderProps {
   isDarkMode: boolean;
@@ -14,14 +14,34 @@ export default function Header({ isDarkMode, toggleDarkMode }: HeaderProps) {
             <div className="flex items-center gap-2">
               <Gamepad2 className="w-8 h-8 text-orange-500" />
               <span className="text-2xl font-bold bg-gradient-to-r from-orange-500 to-purple-500 bg-clip-text text-transparent">
-                GameVerse
+                GameEclipse
               </span>
             </div>
             <nav className="hidden md:flex items-center gap-6">
-              <a href="#" className="hover:text-orange-500 transition-colors font-medium">News</a>
-              <a href="#" className="hover:text-orange-500 transition-colors font-medium">Reviews</a>
-              <a href="#" className="hover:text-orange-500 transition-colors font-medium">Features</a>
-              <a href="#" className="hover:text-orange-500 transition-colors font-medium">Videos</a>
+              <a
+                href="#"
+                className="hover:text-orange-500 transition-colors font-medium"
+              >
+                News
+              </a>
+              <a
+                href="#"
+                className="hover:text-orange-500 transition-colors font-medium"
+              >
+                Reviews
+              </a>
+              <a
+                href="#"
+                className="hover:text-orange-500 transition-colors font-medium"
+              >
+                Features
+              </a>
+              <a
+                href="#"
+                className="hover:text-orange-500 transition-colors font-medium"
+              >
+                Videos
+              </a>
             </nav>
           </div>
           <div className="flex items-center gap-4">
