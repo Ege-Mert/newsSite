@@ -146,22 +146,30 @@ export default function NewsArticle() {
           <div className="flex justify-center items-center my-8">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl">
               <img
-                src={getPublicPath("/images/7a80fe0cdd88af8a7f429a2af9943dcc.png")}
+                src={getPublicPath(
+                  "/images/7a80fe0cdd88af8a7f429a2af9943dcc.png"
+                )}
                 alt="Dungeon One"
                 className="w-full rounded-lg shadow-md cursor-pointer hover:opacity-80 transition-opacity"
                 onClick={() =>
                   setSelectedImage(
-                    getPublicPath("/images/7a80fe0cdd88af8a7f429a2af9943dcc.png")
+                    getPublicPath(
+                      "/images/7a80fe0cdd88af8a7f429a2af9943dcc.png"
+                    )
                   )
                 }
               />
               <img
-                src={getPublicPath("/images/e22c1a9791f7dab2627a772265469663.png")}
+                src={getPublicPath(
+                  "/images/e22c1a9791f7dab2627a772265469663.png"
+                )}
                 alt="Dungeon Two"
                 className="w-full rounded-lg shadow-md cursor-pointer hover:opacity-80 transition-opacity"
                 onClick={() =>
                   setSelectedImage(
-                    getPublicPath("/images/e22c1a9791f7dab2627a772265469663.png")
+                    getPublicPath(
+                      "/images/e22c1a9791f7dab2627a772265469663.png"
+                    )
                   )
                 }
               />
