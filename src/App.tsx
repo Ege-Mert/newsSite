@@ -14,12 +14,12 @@ function App() {
       <Header isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
 
       <main className="w-full px-4 sm:px-6 lg:px-8 py-8">
-        <div className="flex flex-col lg:flex-row gap-8 max-w-[1600px] mx-auto justify-center">
-          <div className="hidden lg:block lg:w-80 xl:w-96 flex-shrink-0"></div>
-          <div className="flex-1 max-w-4xl">
+        <div className="flex flex-col xl:flex-row gap-8 max-w-[1800px] mx-auto justify-center">
+          <div className="hidden xl:block xl:w-64 2xl:w-96 flex-shrink-0"></div>
+          <div className="flex-1 w-full max-w-5xl mx-auto xl:mx-0">
             <NewsArticle />
           </div>
-          <div className="lg:w-80 xl:w-96 flex-shrink-0">
+          <div className="hidden xl:block xl:w-64 2xl:w-96 flex-shrink-0">
             <Sidebar />
           </div>
         </div>
